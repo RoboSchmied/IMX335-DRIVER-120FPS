@@ -2,7 +2,9 @@ Copy "sensor_imx335_mipi.ko" to /root/ and "imx335fpv.bin" to /etc/sensors/
 
 Run:
 rmmod sensor_imx335_mipi
+
 insmod /root/sensor_imx335_mipi.ko chmap=1
+
 killall -1 majestic
 
 Set : "sensorConfig: /etc/sensors/imx335fpv.bin" in majestic.yaml
